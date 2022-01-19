@@ -1,0 +1,70 @@
+
+
+
+@keyframes background {
+    0% {
+      background-position: 0% 50%;
+    }
+
+  
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+
+
+
+
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    background: linear-gradient(141deg, #ae3333 0%, #08b6a1 100%);
+    background-size: 400% 400%;
+    animation: background 5s ease-in-out;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.horloge{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-shadow: 0 2px 50px rgba(10,10,10,0.5);
+}
+
+.heures{
+    width: 500px;
+    font-size: 100px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(10,10,10,0.2);
+}
+
+.date{
+    font-size: 25px;
+    font-family: 'Nunito Sans', sans-serif;
+    padding-top: 10px;
+}
